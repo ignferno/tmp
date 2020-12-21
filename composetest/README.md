@@ -1,1 +1,0 @@
-remember to use `ctrl+shift+R` to hard refresh, otherwise cached static files will be used instead of updated ones

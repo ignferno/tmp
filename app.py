@@ -9,7 +9,7 @@ def get_hit_count():
     retries = 5
     while True:
         try:
-            return cache.incr('kallits')
+            return cache.incr('num')
         except redis.exceptions.ConnectionError as exc:
             if retries == 0:
                 raise exc
@@ -19,5 +19,4 @@ def get_hit_count():
 @app.route('/')
 def hello():
     count = get_hit_count()
-    # return f'<h1 style=\"color:red;background:green;\">Hello World! I have been seen {count} times.</h1>\n'
     return render_template("main.html", e=count)
