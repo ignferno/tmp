@@ -18,6 +18,6 @@ def get_hit_count():
 
 @app.route('/')
 def hello():
-    # count = get_hit_count()
+    count = get_hit_count()
     # return f'<h1 style=\"color:red;background:green;\">Hello World! I have been seen {count} times.</h1>\n'
-    return render_template("main.html")
+    return render_template("main.html", e=count)
