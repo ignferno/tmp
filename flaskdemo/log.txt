@@ -1,0 +1,5 @@
+# list recent processes
+docker ps -a
+# read error logs
+docker logs <container_name>
+

@@ -1,0 +1,7 @@
+sudo apt install curl
+install react
+
+# create react app
+npx create-react-app <name>
+
+http://ubuntuhandbook.org/index.php/2018/04/hide-user-list-ubuntu-18-04-login-screen/
