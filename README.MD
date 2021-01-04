@@ -1,0 +1,1 @@
+remember to use `docker-compose build` before `docker-compose up` to reflect edits to python code `mysql --host=127.0.0.1 --port=32000 -u root -p`

@@ -1,3 +1,4 @@
+from typing import List, Dict
 from flask import Flask
 import mysql.connector
 import json
@@ -5,7 +6,7 @@ import json
 app = Flask(__name__)
 
 
-def favorite_colors():
+def favorite_colors() -> List[Dict]:
     config = {
         'user': 'root',
         'password': 'root',
@@ -24,8 +25,9 @@ def favorite_colors():
 
 
 @app.route('/')
-def index():
-    return json.dumps({'favorite_colors': favorite_colors()})
+def index() -> str:
+    # return json.dumps({'favorite_colors': favorite_colors()})
+    return "joumasepoeske"
 
 
 if __name__ == '__main__':
